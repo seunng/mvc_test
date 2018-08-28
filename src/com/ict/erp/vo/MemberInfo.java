@@ -1,5 +1,4 @@
-//1. vo packge 생성 - table data 넣음 - setter, getter, toString, constuctor field 추가
-
+//1. vo package 생성 - table data 넣음 - setter, getter, toString, constuctor field 추가
 
 package com.ict.erp.vo;
 
