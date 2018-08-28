@@ -1,3 +1,5 @@
+//2. package dao - interface DAO 생성(database는 DAO와 관련이 있으므로 extends CommonDAO)
+
 package com.ict.erp.dao;
 
 import java.sql.SQLException;
