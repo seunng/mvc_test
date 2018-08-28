@@ -1,3 +1,6 @@
+//1. vo packge 생성 - table data 넣음 - setter, getter, toString, constuctor field 
+
+
 package com.ict.erp.vo;
 
 public class MemberInfo {
@@ -24,7 +27,7 @@ public class MemberInfo {
 		this.pi = pi;
 	}
 	
-	public MemberInfo() {}
+	public MemberInfo() {} 
 	
 	public MemberInfo(Long miNum, String miId, String miName, String miPwd, String diCode, Long liLevel, String miEmail,
 			String miDesc, String miPhone, String miZipcode, String miAddress1, String miAddress2) {
