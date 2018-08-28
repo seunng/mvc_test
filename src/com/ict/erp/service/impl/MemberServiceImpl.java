@@ -1,3 +1,5 @@
+//5. service - impl - interface service 추가해서 Impl class 생성
+
 package com.ict.erp.service.impl;
 
 import java.sql.SQLException;
