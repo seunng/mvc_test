@@ -1,0 +1,32 @@
+<<<<<<< HEAD
+CREATE TABLE menu_info(
+=======
+Menu sql문
+CREATE TABLE test_info(
+>>>>>>> branch 'master' of https://github.com/seunng/mvc_test.git
+meiNum NUMBER PRIMARY KEY,
+meiName VARCHAR2(100) NOT NULL,
+meiPrice NUMBER NOT NULL,
+meiDesc VARCHAR2(2000)
+);
+
+CREATE SEQUENCE seq_meiNum;
+DROP SEQUENCE seq_meiNum;
+
+SELECT * FROM menu_info;
+
+<<<<<<< HEAD
+INSERT INTO menu_info
+VALUES(seq_meiNum.nextval, '투움바파스타' ,20000, '마시썽');
+
+COMMIT;
+
+DROP TABLE menu_info;
+=======
+private long meiNum;
+private String meiName;
+private long meiPrice;
+private String meiDesc;
+
+COMMIT;
+>>>>>>> branch 'master' of https://github.com/seunng/mvc_test.git
