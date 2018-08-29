@@ -1,13 +1,18 @@
-testsql문
-CREATE TABLE test_info(
+CREATE TABLE menu_info(
 meiNum NUMBER PRIMARY KEY,
 meiName VARCHAR2(100) NOT NULL,
 meiPrice NUMBER NOT NULL,
 meiDesc VARCHAR2(2000)
 );
 
-CREATE SEQUENCE sql_meiNum;
+CREATE SEQUENCE seq_meiNum;
+DROP SEQUENCE seq_meiNum;
 
-SELECT * FROM test_info;
+SELECT * FROM menu_info;
+
+INSERT INTO menu_info
+VALUES(seq_meiNum.nextval, '투움바파스타' ,20000, '마시썽');
 
 COMMIT;
+
+DROP TABLE menu_info;

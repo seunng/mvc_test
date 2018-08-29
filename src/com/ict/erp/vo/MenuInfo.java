@@ -6,7 +6,7 @@ public class MenuInfo {
 	private String meiName;
 	private long meiPrice;
 	private String meiDesc;
-	public MenuInfo() {}
+	public MenuInfo() {} // 생성자를 하나 더 만듬 근데 왜?
 	
 	public MenuInfo(long meiNum, String meiName, long meiPrice, String meiDesc) {
 		super();
