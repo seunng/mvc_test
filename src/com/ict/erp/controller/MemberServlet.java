@@ -1,3 +1,6 @@
+//6. package controller - servlet 생성
+// doget, dopost, doservice 생성
+
 package com.ict.erp.controller;
 
 import java.io.IOException;

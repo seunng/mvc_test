@@ -1,3 +1,5 @@
+//3. dao - impl - interface DAO 추가해서 Impl class 생성
+
 package com.ict.erp.dao.impl;
 
 import java.sql.SQLException;
@@ -11,7 +13,7 @@ import com.ict.erp.vo.MemberInfo;
 public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 
 	@Override
-	public List<MemberInfo> selectMiList(MemberInfo mi) throws SQLException {
+	public List<MemberInfo> selectMiList(MemberInfo mi) throws SQLException { //List에 data를 추가하는 작업
 		String sql = "SELECT mi.*, di.diname, li.liname from "
 				+ "MEMBER_INFO mi, DEPART_INFO di, LEVEL_INFO li "
 				+ "where mi.dicode = di.dicode "
