@@ -1,4 +1,4 @@
-testsql문
+Menu sql문
 CREATE TABLE test_info(
 meiNum NUMBER PRIMARY KEY,
 meiName VARCHAR2(100) NOT NULL,
@@ -9,5 +9,10 @@ meiDesc VARCHAR2(2000)
 CREATE SEQUENCE sql_meiNum;
 
 SELECT * FROM test_info;
+
+private long meiNum;
+private String meiName;
+private long meiPrice;
+private String meiDesc;
 
 COMMIT;
