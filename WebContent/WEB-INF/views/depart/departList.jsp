@@ -26,7 +26,7 @@
 			</tbody>
 		</table>
 		<div class="btns">
-			<button data-page="/views/depart/departInsert">부서등록</button>
+			<button class="btn btn-secondary" data-page="/views/depart/departInsert">부서등록</button>
 		</div>
 		<div class="page" style="text-align:center">
 			<jsp:include page="/WEB-INF/views/menu/pagination.jsp"></jsp:include>

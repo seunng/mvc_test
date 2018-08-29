@@ -26,7 +26,7 @@
 			<button onclick="searchLevel()">검색</button>
 		</div>
 		<table class="table table-bordered table-hover">
-			<thead>
+			<thead class="thead-dark">
 				<tr>
 					<th><input type="checkbox" onclick="chkAll(this)"></th>
 					<th>레벨번호</th>
@@ -53,9 +53,9 @@
 			</tbody>
 		</table>
 		<div class="btns">
-			<button id="add" onclick="addRow()">레벨추가</button>
-			<button id="save" onclick="saveLevel()">레벨저장</button>
-			<button id="del" onclick="deleteLevel()">레벨삭제</button>
+			<button class="btn btn-secondary" id="add" onclick="addRow()">레벨추가</button>
+			<button class="btn btn-secondary" id="save" onclick="saveLevel()">레벨저장</button>
+			<button class="btn btn-secondary" id="del" onclick="deleteLevel()">레벨삭제</button>
 		</div>
 	</div>
 </div>

@@ -8,7 +8,7 @@ String rPath = request.getContextPath();
 	  <ul class="pagination justify-content-center">
 	  	<c:if test="${page.sBlock!=1}">
 		  	<li class="page-item">
-		      <a class="page-link" href="<%=rPath%>/depart/departList?page=${page.sBlock-page.blockSize}" tabindex="-1">PRE</a>
+		      <a class="btn btn-secondary" href="<%=rPath%>/depart/departList?page=${page.sBlock-page.blockSize}" tabindex="-1">PRE</a>
 		    </li>
 		</c:if>
 		<c:forEach	begin="${page.sBlock}" end="${page.lBlock}" var="p">
@@ -16,7 +16,7 @@ String rPath = request.getContextPath();
 		</c:forEach>
 	    <c:if test="${page.lBlock!=page.totalPage}">
 		    <li class="page-item">
-		      <a class="page-link" href="<%=rPath%>/depart/departList?page=${page.sBlock+page.blockSize}">Next</a>
+		      <a class="btn btn-secondary" href="<%=rPath%>/depart/departList?page=${page.sBlock+page.blockSize}">Next</a>
 		    </li>
 		</c:if>
 	  </ul>

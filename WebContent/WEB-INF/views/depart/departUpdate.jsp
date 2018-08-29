@@ -32,7 +32,7 @@
 				<td><input type="text" name="diDesc" value="${di.diDesc}"></td>
 			</tr>
 			<tr>
-				<td colspan="2"><button>부서수정</button></td>
+				<td colspan="2"><button class="btn btn-secondary">부서수정</button></td>
 			</tr>
 		</table>
 			<input type="hidden" name="diNum"  value="${di.diNum}">

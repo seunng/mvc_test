@@ -6,7 +6,7 @@
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
 	<div id="page-content-wrapper">
 		<table class="table table-bordered table-hover">
-			<thead>
+			<thead class="thead-dark">
 				<tr>
 					<th>번호</th>
 					<th>아이디</th>

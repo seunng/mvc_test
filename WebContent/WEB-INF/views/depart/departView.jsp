@@ -34,7 +34,7 @@
 				<td colspan="2">
 					<form action="/depart/departDelete" method="post">
 						<button data-page="/depart/departUpdate?diNum=${di.diNum}">부서 수정</button>
-						<button>부서삭제</button>
+						<button class="btn btn-secondary">부서삭제</button>
 						<input type="hidden" name="diNum" value="${di.diNum}">
 					</form>
 				</td>
