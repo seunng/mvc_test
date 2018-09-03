@@ -34,7 +34,7 @@
 				</c:forEach>
 				</tbody>				
 			</table>
-			<button data-page="/views/tm/tmInsert">노래입력</button>
+			<button data-page="/views/tm/tmInsert">영화정보입력</button>
 		</div>
 	</div>
 </div>
