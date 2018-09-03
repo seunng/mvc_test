@@ -17,7 +17,6 @@ import com.ict.erp.common.IBean;
 import com.ict.erp.common.ICTUtils;
 import com.ict.erp.service.MusicService;
 import com.ict.erp.service.impl.MusicServiceImpl;
-import com.ict.erp.vo.MusicChart;
 import com.ict.erp.vo.MusicInfo;
 /*
  * web.xml에 해당 서블릿이 등록 되어 있어야 함.
@@ -70,7 +69,7 @@ public class MusicServlet extends HttpServlet {
 			if(cmd.equals("musicInfo")) {
 				//뮤직서비스에서 music리스트를 리턴하는 함수를 호출해준다.
 				List<MusicInfo> musicInfo = ms.selectMusicInfoList(mc);
-				req.setAttribute("musicList", musicList);
+				req.setAttribute("musicList", musicInfo);
 				//해당 리스트를 포워딩할 jsp에서 포문을 돌리며 출력해주기위해
 				//musicList라는 키값을 저장한다.
 			}

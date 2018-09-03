@@ -36,17 +36,16 @@ public class MovieDAOImpl extends CommonDAOImpl implements MovieDAO {
 			ps = con.prepareStatement(sql);
 			ps.setLong(1, tm.getTmNum());
 			rs = ps.executeQuery();
-			while(rs.next()) {
+			if(rs.next()) {
 				TiketMovie tme= new TiketMovie(rs.getLong("tmNum"),rs.getString("tmName"),rs.getLong("tmPrice"),rs.getLong("tmStartDat"),rs.getLong("tmEndDat"), rs.getString("tmCredat"), rs.getString("tmDesc"),rs.getLong("tmcnt"), rs.getString("tmImg"));		
-				return mi;
+				return tme;
 			}
-
-				
 		}catch(SQLException e) {
 			throw e;
 		}finally {
 			close();
 		};
+		return null;
 	}
 
 	@Override
