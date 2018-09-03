@@ -64,3 +64,9 @@
 [2018-08-31 13:56:50,487] WARN (AuthFilter.java:38):/level/levelList
 [2018-08-31 13:56:50,487]ERROR (AuthFilter.java:40):/level/levelList
 [2018-08-31 13:56:50,487]FATAL (AuthFilter.java:42):/level/levelList
+[2018-08-31 14:00:33,854]TRACE (AuthFilter.java:32):/music/musicList
+[2018-08-31 14:00:33,854]DEBUG (AuthFilter.java:34):/music/musicList
+[2018-08-31 14:00:33,854] INFO (AuthFilter.java:36):/music/musicList
+[2018-08-31 14:00:33,855] WARN (AuthFilter.java:38):/music/musicList
+[2018-08-31 14:00:33,855]ERROR (AuthFilter.java:40):/music/musicList
+[2018-08-31 14:00:33,855]FATAL (AuthFilter.java:42):/music/musicList

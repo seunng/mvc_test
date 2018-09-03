@@ -47,12 +47,12 @@ public class MenuDAOImpl extends CommonDAOImpl implements MenuDAO{
 						);
 				return mi;
 			}
-			return null;
 		}catch(SQLException e) {
 			throw e;
 		}finally {
 			close();
 		}
+		return menu;
 	}
 
 	@Override

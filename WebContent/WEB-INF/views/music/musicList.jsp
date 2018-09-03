@@ -12,10 +12,10 @@
 							<th>번호</th>
 							<th>노래명</th>
 							<th>가수명</th>
-							<th>배급사</th>
+							<th>소속사</th>
 							<th>좋아요</th>
 							<th>별로에요</th>
-							<th></th>
+							<th>점수</th>
 							<th>곡 설명</th>
 						</tr>
 					</thead>
@@ -34,6 +34,7 @@
 						</c:forEach>
 					</tbody>
 				</table>
+			<button data-page="/views/music/musicInsert">노래입력</button>
 			</div>
 		</div>
 	</div>

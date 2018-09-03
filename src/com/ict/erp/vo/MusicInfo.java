@@ -22,13 +22,13 @@ public class MusicInfo {
 		this.mcVendor = mcVendor;
 		this.mcLike = mcLike;
 		this.mcDislike = mcDislike;
-		this.mcCredat = mcCredat;
-		this.mcDesc = mcDesc;
-	}
-
-	public int getMcNum() {
-		return mcNum;
-	}
+																																																	this.mcCredat = mcCredat;
+																																																	this.mcDesc = mcDesc;
+																																																}
+																																															
+																																																public int getMcNum() {
+																																																	return mcNum;
+																																																}
 
 	public void setMcNum(int mcNum) {
 		this.mcNum = mcNum;
