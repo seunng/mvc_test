@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<table class="table table-bordered">
+			<thead class="thead-dark">
+				<tr>
+					<th>번호</th>
+					<th>이름</th>
+					<th>코드</th>
+					<th>설명</th>
+				</tr>
+			</thead>
+		</table>
+		<button type='button' id='bnt'>제이슨 테스트</button>
+		<script>
+document.querySelector('#bnt').onclick = function() {
+	
+	var req = new XMLHttpRequest();
+	
+	req.onreadystatechange = function() {
+		if(req.readyState==req.DONE) {
+			if(req.status==200) {
+				var obj = JSON.parse(req.responseText);
+				var html='';
+				for(var i=0; i<obj.length;i++) {
+					html +='<tr>';
+					html +='<td>' + obj[i].diNum+ '</td>';
+					html +='<td>' + obj[i].diName+ '</td>';
+					html +='<td>' + obj[i].diCode+ '</td>';
+					html +='<td>' + obj[i].diDesc+ '</td>';
+					html +='</tr>'
+				}
+				document.querySelector('#tBody').innerHTML = html;
+				}else {}
+			}
+		}
+		alert('send complet')
+	}
+	var param = {name : honggildong, age: '33', address: 'seoul'};
+	param = encodeURIComponent(JSON.stringify(param));
+	req.open(this.innerHTML, '/json/list');
+	req.send();
+}
+</script>
+</body>
+</html>

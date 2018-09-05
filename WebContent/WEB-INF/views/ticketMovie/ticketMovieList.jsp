@@ -7,7 +7,7 @@
 	<div id="page-content-wrapper">
 		<div class="container">
 			<table class="table table-bordered">
-				<thead>
+				<thead class="thead-dark">
 					<tr>
 						<th>번호</th>
 						<th>영화명</th>
@@ -34,7 +34,7 @@
 				</c:forEach>
 				</tbody>				
 			</table>
-			<button data-page="/views/tm/tmInsert">영화정보입력</button>
+			<button data-page="/ticketMovie/ticketMovieInsert"  button class="btn btn-secondary">영화정보입력</button>
 		</div>
 	</div>
 </div>

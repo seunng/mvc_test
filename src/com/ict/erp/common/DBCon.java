@@ -49,10 +49,6 @@ public class DBCon {
 		return con;
 	}
 	
-	public static void main(String[] args) {
-		getCon();
-	}
-	
 	public static void close() {
 		if(con!=null) {
 			try {
@@ -77,5 +73,8 @@ public class DBCon {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	public static void main(String[] args) {
+		System.out.println(getCon());
 	}
 }

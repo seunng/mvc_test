@@ -37,10 +37,10 @@
 			</tr>
 			<tr>
 				<th>영화포스터</th>
-				<td><input type="file" name="tmImg"></td>
+				<td><input type="file"  name="tmImg"></td>
 			</tr>
 			<tr>
-				<td colspan="2"><button>영화등록</button></td>
+				<td colspan="2"><button class="btn btn-secondary">영화등록</button></td>
 			</tr>
 		</table>
 		</form>
